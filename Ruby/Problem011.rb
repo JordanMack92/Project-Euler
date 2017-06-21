@@ -64,5 +64,5 @@ end
 	end
 end
 
-#win
+#WIN
 puts "#{max}"
