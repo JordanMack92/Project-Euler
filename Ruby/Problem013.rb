@@ -100,6 +100,7 @@ numbers = \
 20849603980134001723930671666823555245252804609722
 53503534226472524250874054075591789781264330331690"
 
-sum = numbers.split("\n").map { |char| char.to_i}.inject { |agg, n| agg + n }
+sum = numbers.split("\n").map { |char| char.to_i}   #.inject { |agg, n| agg + n }
 
-puts sum.to_s.slice(0..9)
+p sum.reduce(:+).to_s.slice(0..9).to_i
+#puts sum.to_s.slice(0..9)
